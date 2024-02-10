@@ -1,182 +1,250 @@
-
-
 body {
   margin: 0;
-    padding: 0;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 500;  
-    background-color: #f8f9fa; 
-    color: #495057; 
-  }
-  
-  .header {
-    background-image: url('cover.jpg');
-    background-size: 100%;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: medium;
+  background-color: #fff7d2;
+  background-attachment: fixed;
+  background-size: cover;
+  color: #495057;
+}
+.header {
+  display: flex;
+  flex-direction: column;
+  .header-layout {
+    /* background-image: url('cover.jpg'); */
     background-repeat: no-repeat;
-    /* background-color: #20445c;*/
     color: white;
-    padding: 20px;
-    text-align: center;
-  }
-  
-  /* .logo {
-    max-width: 200px;
-    height: auto;
-  } */
-  
-  
-  .header h1 {
-    margin-top: 10px;
-    font-size: 40px;
-  }
-
-  h2{
-    margin-top: 120px;
-    padding-bottom: 30px;
-  }
-  
-  nav {
-  
-    margin-top: 350px;
-  
-
-  }
-
-  nav a:hover,
-  nav li.active a {
-      color: #ec2525;
-  }
-  
-
-  nav ul {
-      list-style: none;
-      padding: 10px;
-      margin-top: 40px;
-      display: flex;
-      justify-content: center;
-  }
-  
-  nav li {
-      margin: 0 55px;
-  }
-  
-  nav a {
-      text-decoration: none;
-      color: rgb(0, 0, 0);
-      font-weight: bold;
-      font-size: 27px;
-      transition: color 0.3s ease;
-  }
-  
-  
-  .content-border {
-    padding: 100px;
-    margin: 0 200px;
-    border: 2px solid #ddd;
-    border-radius: 15px;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  } 
-
-  .content p {
-    font-size: 18px;
-    line-height: 1.6;
-    color: #495057;
-    margin-bottom: 20px;
-  }
-
-  .vision-mission-text{
-    color: #ffffff !important;
-
-  }
-  
-  
-  .banner-title , .courses-page-title, .testimonials-page-title{
-    margin-top: 40px !important;
-
-  }
-
-  .cloud-image-banner {
-    text-align: center;
-    position: relative;
-  }
-  
-  .cloud-image {
-    margin: 0;
-    width: 570px;
-    height: 500px;
-  }
-  
-
-
-  .content h2 {
-   
-    font-size: 32px; 
-    color: #2c3e50;
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
-  .course-cards {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-  }
-  
-  .course-card {
-    background-color: #ffffff;
-    border-radius: 15px;
-    padding: 20px;
-    margin: 10px;
-    width: 500px;
-    height: 500px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out;
-  }
-  
-  
-  .course-card:hover {
-    transform: scale(1.05);
-  }
-  
-  .course-card h3 {
-    color: #3498db;
-    font-size: 24px;
-    text-align:center;
-  }
-  
-  .course-card p {
-    font-size: 18px;
-    color: #6c757d; 
-    line-height: 1.6;
-  }
-  
-  
-  .centered-container {
-    
-    display: flex;
-    justify-content: center;
     align-items: center;
+    gap: 20px;
+    padding-left: 160px;
+    .logos {
+      display: flex;
+      gap: 2px;
+      .logoone {
+        width: 100;
+        height: 100;
+      }
+      .logotwo {
+        width: 100;
+        height: 100;
+      }
+    }
+    .header-layout-text {
+      color: #575f64;
+      font-family: "Trebuchet MS", sans-serif;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      font-size: 60px;
+      text-align: right;
+      font-stretch: 100%;
+      .header-main-text {
+        font-weight: 600;
+      }
+      .header-sub-text {
+        color: #ec2525;
+      }
+      .header-ilatic {
+        font-style: italic;
+        font-family: "Brush Script MT", cursive;
+      }
+    }
+    .social-media {
+      display: flex;
+      align-items: flex-end;
+      padding-bottom: 10px;
+    }
   }
-  
-  .centered-text {
-    text-align: center;
-    margin-bottom: 40px;
-  }
+}
 
-  .lecturer-image {
-    max-width: 200px;
-    height: auto;
-    
-  }
-  
+.header h1 {
+  margin-top: 10px;
+  font-size: 40px;
+}
 
+h2 {
+  margin-top: 50px;
+  padding-bottom: 0px;
+}
+
+.h2-topic {
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.h2-topic:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+nav {
+  margin-top: 30px;
+}
+
+nav a:hover {
+  color: #ecb725;
+}
+nav li.active a {
+  color: #1f1d1d;
+}
+
+nav ul {
+  list-style: none;
+  padding: 10px;
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+nav li {
+  margin: 0 55px;
+}
+
+nav a {
+  text-decoration: none;
+  color: rgb(80, 80, 80);
+  font-weight: 500;
+  font-size: 25px;
+  transition: color 0.3s ease;
+}
+
+.content-border {
+  padding: 100px;
+  margin: 0 200px;
+  border: 2px solid #ddd;
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.nav-ul {
+  display: flex !important;
+  flex-direction: row !important;
+  gap: 0px !important;
+}
+.content-border-header {
+  padding: 10px;
+  /* background-color: #f87575; */
+  /* border: 0px solid #ddd;
+  border-radius: 15px; */
+  font-weight: 500;
+}
+.content-border-header:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease-in-out;
+}
+.content p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #495057;
+  margin-bottom: 20px;
+}
+
+.vision-mission-text {
+  color: #ffffff !important;
+}
+
+.banner-title ,
+.courses-page-title,
+.testimonials-page-title {
+  text-transform: uppercase;
+  padding-bottom: 0px;
+  font-size: 25px;
+  margin-top: 5px !important;
+  color: #dd5b27 !important;
+  font-weight: 500 !important;
+}
+
+.courses-options{
+  font-weight: 500 !important;
+  text-transform:uppercase !important;
+}
+
+.cloud-image-banner {
+  text-align: center;
+  position: relative;
+}
+
+.cloud-image {
+  margin: 0;
+  width: 450px;
+  height: 250px;
+}
+
+.cloud-image:hover {
+  padding-top: 10px;
+  padding-bottom: 5px;
+  transform: scale(1.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.content h2 {
+  font-size: 32px;
+  color: #2c3e50;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.course-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.course-card {
+  background-color: #ffffff;
+  border-radius: 15px;
+  padding: 20px;
+  margin: 10px;
+  width: 500px;
+  height: 500px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.course-card:hover {
+  transform: scale(1.05);
+}
+
+.course-card h3 {
+  color: #3498db;
+  font-size: 24px;
+  text-align: center;
+}
+
+.course-card p {
+  font-size: 18px;
+  color: #6c757d;
+  line-height: 1.6;
+}
+
+.centered-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.centered-text {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.lecturer-image {
+  width: 200px;
+  height: 310px;
+  
+}
+.lecturer-image:hover{
+  transform: scale(1.1);
+  transition: transform 0.3s ease-in-out;
+}
 .olcards {
-  margin-left: 30% ;
+  margin-left: 30%;
   padding: 0;
   box-sizing: border-box;
   align-items: left;
-  
 }
 
 .olcards {
@@ -258,14 +326,21 @@ body {
 .olcards li .content .title {
   grid-area: title;
   font-size: 1.25em;
-  font-weight: 700; 
+  font-weight: 700;
 }
-
 
 .contact-card {
   display: flex;
   justify-content: space-around;
   margin-top: 20px;
+}
+
+.gform{
+  display: flex;
+  justify-content: space-around;
+  background-color: #ffffff;
+  border-radius: 15px;
+  padding: 20px;
 }
 
 .card {
@@ -300,74 +375,68 @@ body {
   text-decoration: underline;
 }
 
-
-
-
-
-.vision-title, .mission-title{
-    color: #dd2727  !important ;
-    margin-top: 10px !important;
-
+.vision-title,
+.mission-title {
+  color: #dd2727 !important ;
+  margin-top: 10px !important;
 }
 
-#vision{
+#vision {
   margin-right: 20px;
 }
-  .vision-mission {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 50px; 
-  }
-  
-  .cloud-banner {
-    background-color: #051620;
-    color: white;
-    padding: 20px;
-    border-radius: 10px;
-    text-align: center;
-    width: 45%; 
-  }
-  
-  .cloud-banner h2 {
-    margin-bottom: 10px;
-  }
-  
-  .cloud-banner p {
-    font-size: 16px;
-    line-height: 1.6;
-  }
-  
- 
-  .cloud-banner::before {
-    content: '\2601'; 
-    font-size: 40px;
-    display: block;
-    margin-bottom: 10px;
-  }
-  
-  .cloud-banner::after {
-    content: '\2601'; 
-    font-size: 40px;
-    display: block;
-    margin-top: 10px;
-  }
-  
+.vision-mission {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+}
 
-  .testimonials-cards {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
+.cloud-banner {
+  background-color: #051620;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  width: 45%;
+}
+
+.cloud-banner h2 {
+  margin-bottom: 10px;
+}
+
+.cloud-banner p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.cloud-banner::before {
+  content: "\2601";
+  font-size: 40px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.cloud-banner::after {
+  content: "\2601";
+  font-size: 40px;
+  display: block;
+  margin-top: 10px;
+}
+
+.testimonials-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
 .testimonials-card {
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: calc(33.33% - 20px); 
-    box-sizing: border-box;
-    transition: transform 0.3s ease-in-out;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: calc(33.33% - 20px);
+  box-sizing: border-box;
+  transition: transform 0.3s ease-in-out;
 }
 
 .testimonials-card:hover {
@@ -375,60 +444,85 @@ body {
 }
 
 .testimonials-card h3 {
-  text-align:center;
+  text-align: center;
   color: #495057;
-} 
+}
 
 .testimonials-card p {
-    margin: 10px 0;
+  margin: 10px 0;
 }
 
 .testimonials-card img {
-    max-width: 100%;
-    border-radius: 50%;
-    margin-bottom: 10px;
+  max-width: 100%;
+  border-radius: 50%;
+  margin-bottom: 10px;
 }
-  .footer {
-    background-color: #325b75;
-    color: white;
+.footer {
+  background-color: #325b75;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+@media only screen and (max-width: 1500px) {
+  nav {
+    margin-top: 20px;
+  }
+
+  nav a {
+    font-size: 20px;
+  }
+
+  .content-border {
+    margin: 50px;
     padding: 20px;
+  }
+
+  .testimonials-card {
+    width: calc(50% - 20px);
+  }
+  .header-layout-text{
+    text-align: center !important;
+  }
+  .header-layout {
+    background-repeat: no-repeat;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
     text-align: center;
+    padding-left:0px !important;
+    padding-right: 0px !important;
+    padding-top: 0px;
   }
 
-
-  @media only screen and (max-width: 1500px) {
-nav{
-  margin-top: 240px;
 }
-
-    nav a {
-  font-size: 20px;    
-  }
-
-
-
-    .content-border {
-      margin: 50px;
-      padding: 20px;
-    }
-  
-    .testimonials-card {
-      width: calc(50% - 20px);
-    }
-  }
 
 @media only screen and (max-width: 990px) {
-  nav{
-    margin-top: 240px;
+  nav {
+    margin-top: 20px;
   }
-  
-      nav a {
-    font-size: 20px;    
-    }
-  
-  .content-border{
+
+  nav a {
+    font-size: 20px;
+  }
+
+  .content-border {
     margin: 30px;
     padding: 20;
+  }
+
+  .header-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-left:0px !important;
+    padding-right: 0px !important;
+  }
+
+  .header-layout-text{
+    text-align: center !important;
   }
 
   .testimonials-card {
@@ -436,25 +530,20 @@ nav{
   }
 }
 
-
 @media only screen and (max-width: 767px) {
-
-  nav{
-    margin-top: 120px;
+  nav {
+    padding-bottom: 10px;
     margin-left: 80px;
     margin-right: 80px;
-
-   
   }
-  
-      nav a {
-    font-size: 16px;    
-    }
-  
 
-  .cloud-image{
+  nav a {
+    font-size: 16px;
+  }
+
+  .cloud-image {
     width: 400px;
-     }
+  }
   .content-border {
     margin: 20px;
     padding: 10px;
@@ -465,25 +554,19 @@ nav{
   }
 }
 
-
-
-@media only screen and (max-width: 575px){
-
-nav{
-  margin-top: 120px;
-  margin-left: 80px;
-  margin-right: 80px;
-
- 
-}
-
-    nav a {
-  font-size: 16px;    
+@media only screen and (max-width: 575px) {
+  nav {
+    margin-top: 120px;
+    margin-left: 80px;
+    margin-right: 80px;
   }
 
+  nav a {
+    font-size: 16px;
+  }
 
-  .cloud-image{
- width: 400px;
+  .cloud-image {
+    width: 400px;
   }
   .content-border {
     margin: 10px;
