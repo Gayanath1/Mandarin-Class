@@ -577,3 +577,31 @@ nav a {
     width: 100%;
   }
 }
+
+@media only screen and (max-width: 550px) {
+  nav {
+    margin-top: 20px;
+  }
+
+  nav a {
+    font-size: 16px;
+  }
+  nav li {
+    margin: 0 0px !important;
+  }
+  .cloud-image {
+    width: 300px;
+    height: auto;
+  }
+  .content-border {
+    margin: 10px;
+    padding: 10px;
+  }
+
+  .testimonials-card {
+    width: 100%;
+  }
+  .olcards{
+    margin-left: 4px !important;
+  }
+}
