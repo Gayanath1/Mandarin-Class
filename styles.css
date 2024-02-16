@@ -4,7 +4,8 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 500;
   font-size: medium;
-  background-color: #fff7d2;
+  background-color: #ffffff;
+  background-image: url(background.svg);
   background-attachment: fixed;
   background-size: cover;
   color: #495057;
@@ -19,7 +20,7 @@ body {
     display: flex;
     align-items: center;
     gap: 20px;
-    padding-left: 300px;
+    padding-left: 180px;
     .logos {
       display: flex;
       gap: 2px;
@@ -42,13 +43,12 @@ body {
       text-align: right;
       font-stretch: 100%;
       .header-main-text {
-        font-weight: 600;
+        font-weight: 500;
       }
       .header-sub-text {
         color: #ec2525;
       }
       .header-ilatic {
-        font-style: italic;
         font-family: "Brush Script MT", cursive;
       }
     }
@@ -79,6 +79,14 @@ h2 {
   transition: transform 0.3s ease-in-out;
 }
 
+.above-dragon-cloud-text{
+  border: 2px solid #ddd;
+  background-color: #d3a2a2;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 20px;
+}
 nav {
   margin-top: 30px;
 }
@@ -111,6 +119,8 @@ nav a {
 }
 
 .content-border {
+  background-image: url(content-bg.svg);
+  background-attachment: fixed;
   padding: 100px;
   margin: 0 200px;
   border: 2px solid #ddd;
@@ -170,7 +180,7 @@ nav a {
 .cloud-image {
   margin: 0;
   width: 450px;
-  height: 250px;
+  height: 320px;
 }
 
 .cloud-image:hover {
@@ -236,7 +246,18 @@ nav a {
   height: 310px;
   
 }
+
+.lecturer2-image{
+  width: 270px;
+  height: 310px;
+}
+
 .lecturer-image:hover{
+  transform: scale(1.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.lecturer2-image:hover{
   transform: scale(1.1);
   transition: transform 0.3s ease-in-out;
 }
@@ -520,9 +541,10 @@ nav a {
     padding-left:0px !important;
     padding-right: 0px !important;
   }
-
+    
   .header-layout-text{
     text-align: center !important;
+    font-size: 30px !important;
   }
 
   .testimonials-card {
