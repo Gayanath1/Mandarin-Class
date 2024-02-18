@@ -139,8 +139,12 @@ nav a {
   /* background-color: #f87575; */
   /* border: 0px solid #ddd;
   border-radius: 15px; */
-  font-weight: 500;
 }
+
+.content-border-header a {
+  font-weight: 600;
+}
+
 .content-border-header:hover {
   transform: scale(1.1);
   transition: transform 0.3s ease-in-out;
@@ -179,7 +183,7 @@ nav a {
 
 .cloud-image {
   margin: 0;
-  width: 450px;
+  width: 550px;
   height: 320px;
 }
 
@@ -209,7 +213,18 @@ nav a {
   padding: 20px;
   margin: 10px;
   width: 500px;
-  height: 500px;
+  height: 300px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.course-card-hsk {
+  background-color: #ffffff;
+  border-radius: 15px;
+  padding: 20px;
+  margin: 10px;
+  width: 500px;
+  height: 700px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease-in-out;
 }
@@ -218,7 +233,17 @@ nav a {
   transform: scale(1.05);
 }
 
+.course-card-hsk:hover {
+  transform: scale(1.05);
+}
+
 .course-card h3 {
+  color: #3498db;
+  font-size: 24px;
+  text-align: center;
+}
+
+.course-card-hsk h3 {
   color: #3498db;
   font-size: 24px;
   text-align: center;
