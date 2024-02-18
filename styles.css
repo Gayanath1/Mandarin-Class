@@ -5,6 +5,8 @@ body {
   font-weight: 500;
   font-size: medium;
   background-image: url(background.svg);
+  padding: 1px;
+  margin: 1px;
   background-repeat: no-repeat;
   background-attachment: fixed;
   -o-background-size: cover;
