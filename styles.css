@@ -5,7 +5,10 @@ body {
   font-weight: 500;
   font-size: medium;
   background-color: #ffffff;
-  background-image: url(background.jpg);
+  background-image: url(background.svg);
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
   background-attachment: fixed;
   background-size: cover;
   color: #495057;
@@ -79,7 +82,7 @@ h2 {
   transition: transform 0.3s ease-in-out;
 }
 
-.above-dragon-cloud-text{
+.above-dragon-cloud-text {
   border: 2px solid #ddd;
   background-color: #d3a2a2;
   border-radius: 15px;
@@ -160,7 +163,7 @@ nav a {
   color: #ffffff !important;
 }
 
-.banner-title ,
+.banner-title,
 .courses-page-title,
 .testimonials-page-title {
   text-transform: uppercase;
@@ -171,9 +174,9 @@ nav a {
   font-weight: 500 !important;
 }
 
-.courses-options{
+.courses-options {
   font-weight: 500 !important;
-  text-transform:uppercase !important;
+  text-transform: uppercase !important;
 }
 
 .cloud-image-banner {
@@ -269,20 +272,19 @@ nav a {
 .lecturer-image {
   width: 200px;
   height: 310px;
-  
 }
 
-.lecturer2-image{
+.lecturer2-image {
   width: 270px;
   height: 310px;
 }
 
-.lecturer-image:hover{
+.lecturer-image:hover {
   transform: scale(1.1);
   transition: transform 0.3s ease-in-out;
 }
 
-.lecturer2-image:hover{
+.lecturer2-image:hover {
   transform: scale(1.1);
   transition: transform 0.3s ease-in-out;
 }
@@ -381,7 +383,7 @@ nav a {
   margin-top: 20px;
 }
 
-.gform{
+.gform {
   display: flex;
   justify-content: space-around;
   background-color: #ffffff;
@@ -527,7 +529,7 @@ nav a {
   .testimonials-card {
     width: calc(50% - 20px);
   }
-  .header-layout-text{
+  .header-layout-text {
     text-align: center !important;
   }
   .header-layout {
@@ -538,11 +540,10 @@ nav a {
     align-items: center;
     gap: 20px;
     text-align: center;
-    padding-left:0px !important;
+    padding-left: 0px !important;
     padding-right: 0px !important;
     padding-top: 0px;
   }
-
 }
 
 @media only screen and (max-width: 990px) {
@@ -563,11 +564,11 @@ nav a {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    padding-left:0px !important;
+    padding-left: 0px !important;
     padding-right: 0px !important;
   }
-    
-  .header-layout-text{
+
+  .header-layout-text {
     text-align: center !important;
     font-size: 30px !important;
   }
@@ -648,7 +649,7 @@ nav a {
   .testimonials-card {
     width: 100%;
   }
-  .olcards{
+  .olcards {
     margin-left: 4px !important;
   }
 }
